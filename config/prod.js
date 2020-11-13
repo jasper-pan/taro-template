@@ -1,18 +1,57 @@
 module.exports = {
   env: {
-    NODE_ENV: '"production"'
+    NODE_ENV: '"development"'
   },
   defineConstants: {
   },
   mini: {},
   h5: {
-    /**
-     * 如果h5端编译后体积过大，可以使用webpack-bundle-analyzer插件对打包体积进行分析。
-     * 参考代码如下：
-     * webpackChain (chain) {
-     *   chain.plugin('analyzer')
-     *     .use(require('webpack-bundle-analyzer').BundleAnalyzerPlugin, [])
-     * }
-     */
+    sourceMapType:'cheap-module-source-map',
+    enableExtract:false,
+    webpackChain(chain) {
+      chain.merge({
+        output: {
+          filename: 'main.js'
+        },
+        optimization:{
+          runtimeChunk: false,
+          // splitChunks:{
+          //   chunks: 'all',
+          //   minSize: 10,
+          //   minChunks: 2,
+          //   automaticNameDelimiter: '~',
+          //   name: true,
+          //   cacheGroups: {
+          //     common: {
+          //         test: /src\/other/,
+          //         enforce: true
+          //     }
+          // }
+
+
+          // },
+         
+        }
+        // module: {
+        //   rules: {
+        //     use: {
+        //       loader: 'babel-loader',
+        //       options: {
+        //         presets: [
+        //           '@babel/preset-env',
+        //           '@babel/preset-react',
+        //           '@babel/preset-typescript',
+        //         ],
+        //       }
+        //     }
+        //   }
+        // }
+      })
+      chain.plugins.delete('htmlWebpackPlugin')
+      chain.plugins.delete('addAssetHtmlWebpackPlugin')
+     
+
+    }
+
   }
 }

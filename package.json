@@ -34,18 +34,27 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "@babel/preset-env": "^7.12.1",
+    "@babel/preset-es2015": "^7.0.0-beta.53",
+    "@babel/preset-react": "^7.12.5",
+    "@babel/preset-typescript": "^7.12.1",
     "@babel/runtime": "^7.7.7",
     "@tarojs/components": "3.0.16",
     "@tarojs/react": "3.0.16",
     "@tarojs/runtime": "3.0.16",
     "@tarojs/taro": "3.0.16",
+    "babel-loader": "^8.2.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
     "react": "^16.10.0",
     "react-dom": "^16.10.0",
     "taro-ui": "3.0.0-alpha.1",
-    "unstated-next": "^1.1.0"
+    "unstated-next": "^1.1.0",
+    "webpack-bundle-analyzer": "^4.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-transform-classes": "^7.12.1",
     "@tarojs/mini-runner": "3.0.16",
     "@tarojs/webpack-runner": "3.0.16",
     "@types/react": "^16.0.0",

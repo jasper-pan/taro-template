@@ -1,12 +1,6 @@
 import React from 'react'
-
 import Stores from './store';
 import './app.scss';
-
-
- 
-
- 
 
 const App = (props) =>{
   
