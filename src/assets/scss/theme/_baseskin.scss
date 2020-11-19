@@ -1,0 +1,184 @@
+/* stylelint-disable at-rule-empty-line-before,at-rule-name-space-after,at-rule-no-unknown */
+@import '../var/index.scss';
+ 
+
+// The prefix to use on all css classes from ant.
+// $ant-prefix: monkey;
+
+// An override for the html selector for theme prefixes
+$html-selector: html;
+
+// -------- Colors -----------
+$info-color: $primary-color;
+$success-color: $success-main;
+$processing-color: $primary-color;
+$error-color: $danger-main;
+$highlight-color: $danger-main;
+$warning-color: $warn-main;
+
+// // Color used by default to control hover and active backgrounds and for
+
+// Base Scaffolding Variables
+// ---
+
+// Base background color for most components
+$component-background: $white;
+// Popover background color
+$popover-background: $component-background;
+
+// vertical paddings
+$padding-lg: 24px; // containers
+$padding-md: 16px; // small containers and buttons
+$padding-sm: 12px; // Form controls and items
+$padding-xs: 8px; // small items
+
+// vertical padding for all form controls
+$control-padding-horizontal: $padding-sm;
+$control-padding-horizontal-sm: $padding-xs;
+
+// The background colors for active and hover states for things like
+// list items or table cells.
+$item-active-bg: $primary-color;
+$item-hover-bg: $gray-2;
+
+// ICONFONT
+$iconfont-css-prefix: anticon;
+
+// Animation
+$ease-base-out: cubic-bezier(0.7, 0.3, 0.1, 1);
+$ease-base-in: cubic-bezier(0.9, 0, 0.3, 0.7);
+$ease-out: cubic-bezier(0.215, 0.61, 0.355, 1);
+$ease-in: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+$ease-in-out: cubic-bezier(0.645, 0.045, 0.355, 1);
+$ease-out-back: cubic-bezier(0.12, 0.4, 0.29, 1.46);
+$ease-in-back: cubic-bezier(0.71, -0.46, 0.88, 0.6);
+$ease-in-out-back: cubic-bezier(0.71, -0.46, 0.29, 1.46);
+$ease-out-circ: cubic-bezier(0.08, 0.82, 0.17, 1);
+$ease-in-circ: cubic-bezier(0.6, 0.04, 0.98, 0.34);
+$ease-in-out-circ: cubic-bezier(0.78, 0.14, 0.15, 0.86);
+$ease-out-quint: cubic-bezier(0.23, 1, 0.32, 1);
+$ease-in-quint: cubic-bezier(0.755, 0.05, 0.855, 0.06);
+$ease-in-out-quint: cubic-bezier(0.86, 0, 0.07, 1);
+
+// Border color
+$border-color-base: $gray-3; // base border outline a component
+$border-color-split: hsv(0, 0, 94%); // split border inside a component
+$border-color-inverse: $white;
+$border-width-base: 1px; // width of the border for a component
+$border-width-mid: 1px; // width of the border for a component
+$border-style-base: solid; // style of a components border
+
+// Outline
+$outline-blur-size: 0;
+$outline-width: 0px;
+$outline-color: $primary-color;
+
+$background-color-light: hsv(
+  0,
+  0,
+  98%
+); // background of header and selected item
+$background-color-base: hsv(0, 0, 96%); // Default grey background color
+
+// Disabled states
+$disabled-color: $gray-3;
+$disabled-bg: $background-color-base;
+$disabled-color-dark: $white-400;
+
+// Shadow
+$shadow-color: rgba(0, 0, 0, 0.15);
+$shadow-color-inverse: $component-background;
+$shadow-2: $shadow-ant-2;
+$box-shadow-base: $shadow-2;
+
+$shadow-1-up: $shadow-ant-1-up;
+$shadow-1-down: $shadow-ant-1-down;
+$shadow-1-left: $shadow-ant-1-left;
+$shadow-1-right: $shadow-ant-1-right;
+
+
+// Button
+$button-height-default: 40px;
+$button-lineheight: 36px;
+$button-border-radius: 20px;
+$button-height-small: 32px;
+$button-height-lg: 48px;
+
+//自定义的覆盖air-ui的颜色变量
+//Input
+// ---
+$input-height-base: 40px;
+$input-height-lg: 48px;
+$input-height-sm: 32px;
+$input-placeholder-color: $text-color-tertiary;
+$input-color: $text-color;
+$input-icon-color: $input-placeholder-color;
+$input-icon-size: 16px;
+$input-border-color: $gray-3;
+$input-bg: $component-background;
+$input-focus-border-color: $blue-6;
+$input-hover-border-color: $blue-3;
+$input-disabled-bg: $disabled-color;
+$input-outline-offset: 0 0;
+// $input-icon-hover-color: fade($black, 85%);
+
+//Select
+$select-single-item-height-lg: 48px;
+$select-input-icon-size: $fz-24;
+$select-input-icon-color: $text-color-tertiary;
+$select-dropdown-text-color: $text-color;
+$select-dropdown-selected-bg-color: $link-active-color;
+$select-dropdown-selected-icon-color: $blue-6;
+$select-dropdown-text-size: $fz-14;
+$select-dropdown-item-hieght: $input-height-base;
+
+$select-item-selected-font-weight: '400';
+$select-item-selected-bg: $blue-1;
+
+// Checkbox
+
+$checkbox-size: 16px;
+$checkbox-lg: 24px;
+$checkbox-color: $primary-color;
+$checkbox-check-color: $white;
+$checkbox-check-bg: 'transparent';
+$checkbox-border-color: $gray-3;
+$checkbox-hover-border-color: $primary-3;
+$checkbox-border-width: $border-width-mid;
+$checkbox-border-radius: $border-radius-sm;
+$checkbox-disable-bg: $gray-3;
+$checkbox-disable-color: $gray-4;
+$checkbox-font-weight: $weight-blod;
+$checkbox-font-size: $fz-18;
+
+// Radio
+$radio-size: 16px;
+$radio-border-radius: 8px;
+$radio-border-color: $gray-3;
+$radio-border-width: $border-width-mid;
+$radtio-hover-border-color: $primary-3;
+$radio-dot-color: $white;
+$radio-dot-size: 5px;
+$radio-dot-disabled-color: $gray-4;
+$radio-disabled-bg: $gray-3;
+$radio-checked-bg: $primary-color;
+
+$datepicker-disabled-bg: $disabled-color;
+// // antd
+// $radio-size: 16px;
+// $radio-dot-color: $primary-color;
+// $radio-dot-disabled-color: fade($black, 20%);
+// // solid text-color
+// $radtio-solid-checked-color: $component-background;
+// // Keep typo compatible
+// $radio-solid-checked-color: $radtio-solid-checked-color;
+
+// Radio buttons
+
+$radio-disabled-button-checked-bg: tint($black, 90%);
+$radio-disabled-button-checked-color: $text-color-inverse;
+
+$icon-color: $gray-4;
+$btn-disable-color: $gray-4;
+$btn-disable-border: $gray-3;
+$btn-disable-bg: transparent;

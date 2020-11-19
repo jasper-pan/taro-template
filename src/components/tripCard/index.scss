@@ -1,0 +1,130 @@
+.trip-card {
+  font-size: 24px;
+  margin-bottom: 16px;
+  margin-top: 16px;
+
+  .at-row {
+    height: 100%;
+    position: relative;
+  }
+
+  .tag {
+    height: 48px;
+    background: #e60023;
+    border-radius: 6px;
+    font-weight: 600;
+    color: #fff;
+    line-height: 48px;
+    text-align: center;
+    padding: 0 8px;
+  }
+
+  .date {
+    font-size: 32px;
+    font-weight: 600;
+    color: #333;
+    line-height: 48px;
+    margin-left: 12px;
+  }
+
+  .point {
+    width: 12px;
+    height: 12px;
+    background: #e0e0e0;
+    line-height: 48px;
+    margin-left: 4px;
+    margin-right: 16px;
+  }
+
+  .airport {
+    margin-top: 16px;
+    font-size: 28px;
+    color: #333333;
+    line-height: 44px;
+
+    .time {
+      font-weight: 600;
+      width: 88px;
+    }
+
+    .name {
+      font-weight: 400;
+    }
+  }
+
+  &-center {
+    .duration {
+      color: #858585;
+      font-weight: 400;
+    }
+
+    .line {
+      margin-left: 16px;
+
+      &:before {
+        content: "";
+        background: #e0e0e0;
+        width: 4px;
+      }
+    }
+
+    .flight {
+      background-color: #f5f5f5;
+      border-radius: 8px;
+      padding: 16px;
+      width: 522px;
+      margin: 16px 0 0 20px;
+      font-size: 28px;
+
+      .row {
+        height: 44px;
+        line-height: 44px;
+        color: #333333;
+
+        .airLogo {
+          width: 32px;
+          height: 32px;
+          border-radius: 8px;
+          margin-right: 6px;
+        }
+
+        .cabin-name {
+          margin: 0 16px;
+        }
+        .flightType {
+          color: #858585;
+        }
+
+        .additional-icon {
+          margin-left: 16px;
+          color: #5983b2;
+        }
+      }
+    }
+
+    .circle {
+      position: absolute;
+      margin-left: -10px;
+      margin-top: 22px;
+      width: 16px;
+      height: 16px;
+      background: #fff;
+      border: 4px solid #e0e0e0;
+      border-radius: 12px;
+    }
+
+    .stopOrConnection {
+      margin-top: 16px;
+      margin-left: 20px;
+      margin-bottom: 14px;
+      height: 36px;
+      font-size: 24px;
+      line-height: 36px;
+      color: #858585;
+
+      .cityName {
+        margin-left: 8px;
+      }
+    }
+  }
+}

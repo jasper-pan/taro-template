@@ -1,0 +1,23 @@
+.empty {
+  width: 100%;
+  .empty-info {
+    .empty-image {
+      margin: 0 auto;
+      width: 100%;
+      height: 100%;
+    }
+    .info-text {
+      width: 526px;
+      margin-top: 20px;
+      font-size: 32px;
+      text-align: center;
+      color: #858585;
+      font-weight: 400;
+      white-space: pre-line;
+      margin-bottom: 48px;
+    }
+  }
+  .empty-marge {
+    margin-top: 240px;
+  }
+}

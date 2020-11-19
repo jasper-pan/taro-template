@@ -1,0 +1,221 @@
+export const common = {
+  index: 'Index',
+  profile: 'Profile',
+  my: 'My',
+  order: 'Order',
+  login: 'Login',
+  logout: 'Logout',
+  linkTo: 'Link to',
+  weeks: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+  weekdays: 'Sunday_Monday_Tuesday_Wednesday_Thursday_Friday_Saturday'.split('_'),
+  weekdaysShort: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'],
+  months: 'January_February_March_April_May_June_July_August_September_October_November_December'.split('_'),
+  monthsShort: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
+  time: { hour: 'h', minute: 'm' },
+  memberLoginType: {
+    'PHONE_NUMBER': 'phone',
+    'EMAIL_ADDRESS': 'email',
+    'USERNAME': 'username',
+    'CARD_NUMBER': 'card number'
+  },
+  memberLoginTypeOptions: [
+    { label: 'phone', value: 'PHONE_NUMBER' },
+    { label: 'email', value: 'EMAIL_ADDRESS' },
+    { label: 'username', value: 'USERNAME' },
+    { label: 'card number', value: 'CARD_NUMBER' }
+  ],
+
+  ffpLoginType: {
+    'MEMBERCARD': 'card number',
+    'MOBILE': 'phone'
+  },
+  ffpLoginTypeOptions: [
+    { label: 'card number', value: 'MEMBERCARD' },
+    { label: 'phone', value: 'MOBILE' }
+  ],
+  adt: 'adult',
+  chd: 'child',
+  inf: 'Infant',
+  military: 'DISABLED_MILITARY',
+  police: 'DISABLED_POLICE',
+  psgTypes: ['ADT', 'CHD', 'INF'],
+  customTypes: { ADT: 'ADT', CHD: 'CHD', INF: 'INF' },
+  customTypeOptions: [
+    { label: '成人（满12周岁）', value: 'ADT' },
+    { label: '儿童（满2周岁，未满12周岁）', value: 'CHD' },
+    { label: '婴儿（满14天，未满2周岁)', value: 'INF' }
+  ],
+  genders: ['男', '女'],
+  genderType: { MALE: '男', FEMALE: '女' },
+  gendersOptions: [
+    { label: '男', value: 'MALE' },
+    { label: '女', value: 'FEMALE' }
+  ],
+  PASSPORT: 'PASSPORT',
+  date: { month: 'Month', day: 'Day', weeks: 'week', hour: 'h', minute: 'm' },
+  day: 'Day',
+  segmentTypes: {
+    return: {
+      go: 'Go',
+      back: 'Back'
+    },
+    multi: ['First ', 'Second', 'Third', 'Fourth', 'Fifth', 'Sixth']
+  },
+  cabin: ' Cabin',
+  equipmentType: 'Equipment ',
+  boeing: 'Boeing',
+  airbus: 'Airbus',
+  passengerTypes: {
+    ADT: 'ADT',
+    CHD: 'CHD',
+    INF: 'INF',
+    DISABLED_MILITARY: 'DISABLED_MILITARY',
+    DISABLED_POLICE: 'DISABLED_POLICE'
+  },
+  docTypes: {
+    PASSPORT: '护照',
+    PRC_IDENTITY_CARD: '身份证',
+    OFFICER_ID: '军官证',
+    HOME_RETURN_PERMIT: '港澳居民来往内地通行证(回乡证)',
+    RESIDENCE_PERMIT_HK_MO_TW: '港澳台居民居住证',
+    RESIDENCE_PERMIT_TAIWAN: '台湾居民来往大陆通行证(台胞证)',
+    FOREIGN_PERMANENT_RESIDENT_IDENTITY_CARD: '外国永久居民身份证',
+    OTHER: '其他证件'
+  },
+  // 新增常用乘机人的证件数据,勿改
+  docTypeOptions: [
+    { label: '护照', value: 'PASSPORT' },
+    { label: '身份证', value: 'PRC_IDENTITY_CARD' },
+    { label: '军官证', value: 'OFFICER_ID' },
+    { label: '港澳居民来往内地通行证(回乡证)', value: 'HOME_RETURN_PERMIT' },
+    { label: '港澳台居民居住证', value: 'RESIDENCE_PERMIT_HK_MO_TW' },
+    { label: '台湾居民来往大陆通行证(台胞证)', value: 'RESIDENCE_PERMIT_TAIWAN' },
+    { label: '外国永久居民身份证', value: 'FOREIGN_PERMANENT_RESIDENT_IDENTITY_CARD' },
+    { label: '其他证件', value: 'OTHER' }
+  ],
+  confirm: 'Confirm',
+  cancel: 'Cancel',
+  notice: 'Notice',
+  // ----------------Validator 校验提示-------------------
+  // 姓名
+  nameTip1: 'The name cannot be blank',
+  nameTip2: 'The total number of characters cannot exceed 32',
+  nameTip3: 'English first and last names are between 2 and 14 in length',
+  nameTip4: 'English first and last names must be separated by one \'/\' only',
+  nameTip5: 'The name cannot contain special characters or Spaces',
+  nameTip6: 'If the name contains rare words, the first word is rare words, the name is pinyin instead; If the second word for rare words, the first word to write Chinese characters, after all write pinyin, and so on',
+  // 国际姓名验证
+  firstNameTip1: 'The name cannot be empty',
+  surnameTip1: 'The last name cannot be null',
+  surnameTip2: 'Please keep the name consistent with the certificate information; Chinese passengers please fill in the pinyin of the corresponding name.',
+  // 用户名校验
+  usernameTip1: '请填写用户名',
+  usernameTip2: '用户名必须是以字母开头的6-20位字母数字组合',
+  // 密码验证
+  passwordTip1: '请填写密码',
+  passwordTip2: '密码不得小于8位',
+  passwordTip5: '密码必须包含英文，数字，特殊符号',
+  passwordTip3: '重复密码不能为空',
+  passwordTip4: '两次密码不相同',
+  // 手机号
+  mobileTip1: 'The phone number cannot be empty',
+  mobileTip2: 'Please enter the correct mobile phone number',
+  // 证件号
+  docIdTip1: 'The voucher number cannot be null',
+  docIdTip2: 'Error check of id card number',
+  docIdTip3: 'Certificate number format for 4-50 digits or 4-50 digits, letter combination',
+  docIdTip4: 'The Hong Kong, Macao and Taiwan resident residence permit you entered is illegal',
+  docIdTip5: 'Error check of id card number',
+  docIdTip7: 'The passenger type does not match the birth date of the certificate, please modify it!',
+  // 护照号码
+  passportTip1: 'The passport number cannot be blank',
+  passportTip2: 'The format of passport number is 4-20 digits or 4-20 digits and letter combination',
+  // 军警残证件号
+  disableTip1: 'Military disabled police disabled id number cannot be empty',
+  disableTip2: 'The certificate format is "2-digit Chinese character" + "1-digit capital letter" + "6-digit digit"',
+  // 出生日期
+  birthdayTip1: 'The date of birth cannot be left blank',
+  birthdayTip2: 'Please enter the correct date of birth of the child (2-11 years old)',
+  birthdayTip3: 'Please enter the correct date of birth (more than 14 days and less than 2 years old)',
+  birthdayTip4: 'Please enter the correct adult date of birth (12 years or older)',
+  birthdayTip5: 'Date of birth and ID card do not match',
+  // 证件有效日期验证
+  expiryDateTip1: 'The valid date of the certificate cannot be blank',
+  expiryDateTip2: 'The certificate must be valid for 6 months after the departure date',
+  buy: 'Booking ',
+  phoneType: { 'MOBILE': 'phone number', 'HOME': 'fixed telephone' },
+  // details component
+  details: 'details',
+  tianHang: 'Tian Hang ',
+  nextStep: 'Next Step',
+  domestic: 'Domestic',
+  international: 'International',
+  sendCode: 'Send verification code',
+  captchaTip1: 'Please click belong to',
+  captchaTip2: 'All Chinese characters of',
+  captchaTip3: 'Failed to get picture verification code',
+  departure: 'Departure ',
+  arrival: 'Arrival ',
+  select: 'Select ',
+  city: 'City ',
+  please: 'Please ',
+  // email
+  email: 'Email ',
+  validate: 'Validate ',
+  management: 'Management ',
+  bound: 'Bound ',
+  bounded: 'Bounded ',
+  notPass: 'Not pass ',
+  click: 'Click ',
+  change: 'Change ',
+  update: 'Update ',
+  address: 'Address ',
+  enter: 'Enter ',
+  code: 'Code ',
+  achieve: 'Achieve ',
+  save: 'Save ',
+  authCodeSendSuccess: 'Verification code sent successfully',
+  getIt: 'Get It!',
+  success: 'Success ',
+  failed: 'Failed ',
+  format: 'Format ',
+  error: 'Error ',
+  show: 'Show ',
+  putItAway: 'Put It Away',
+  more: 'More ',
+  customer: 'Customer',
+  contact: 'Contact ',
+  info: 'Info ',
+  name: 'Name ',
+  mobile: 'Mobile ',
+  payment: 'Payment ',
+  dateTime: 'Date Time ',
+  mode: 'Mode ',
+  money: 'Money ',
+  type: 'Type ',
+  status: 'Status ',
+  cny: 'CNY',
+  ticketNumber: 'Ticket Number ',
+  price: 'Price ',
+  piece: 'Piece ',
+  operation: 'Operation',
+  // ac 添加乘机人
+  specialType: [
+    { label: 'DISABLED_MILITARY', value: 'DISABLED_MILITARY' },
+    { label: 'DISABLED_POLICE', value: 'DISABLED_POLICE' }
+  ],
+  pleaseSelect: 'Please Select',
+  enterZip: 'please enter zip',
+  zipTips: 'please enter correct zip',
+  unknownError: 'An unknown error',
+  codeFailed: 'Failed to obtain captcha',
+  operationFailed: 'The operation failed. Please try again later',
+  operationSuccess: 'Congratulations, it worked',
+  chooseDocType: 'Please select the type of certificate',
+  captcha: 'Verification code',
+  captchaPlaceholder: 'Please enter a verification code',
+  answer: 'The answer',
+  newPassword: 'The new password',
+  confirmPassWord: 'Confirm password',
+  findType: 'Please select the password retrieval path'
+};

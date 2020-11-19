@@ -1,0 +1,100 @@
+$font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB',  'Microsoft YaHei', 'Helvetica Neue', Helvetica, Arial, sans-serif, 'Apple Color Emoji',  'Segoe UI Emoji', 'Segoe UI Symbol';
+$code-family: family-sf, Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+
+//文本颜色
+$text-color                : $gray-6;
+$text-color-secondary      : $gray-5;
+$text-color-tertiary       : $gray-4;
+$text-color-reminder       : $gray-3;
+$text-color-inverse        : $white-700;
+$icon-color                : inherit;
+$icon-color-hover          : $gray-6;
+$heading-color             : $gray-6;
+$heading-color-dark        : $white-700;
+$text-color-dark           : $white-600;
+$text-color-secondary-dark : $white-500;
+$text-color-tertiary-dark  : $white-400;
+$text-selection-bg         : $primary-color;
+$font-variant-base         : tabular-nums;
+$font-feature-settings-base: 'tnum';
+$font-size-base            : 14px;
+$font-size-lg              : $font-size-base + 2px;
+$font-size-sm              : 12px;
+$font-size-base            : 14px;
+$heading-1-size            : ceil($font-size-base * 2.71);
+$heading-2-size            : ceil($font-size-base * 2.14);
+$heading-3-size            : ceil($font-size-base * 1.71);
+$heading-4-size            : ceil($font-size-base * 1.42);
+
+$line-height-base  : 1.5715;
+$fz-12             : 12px;
+$fz-14             : 14px;
+$fz-16             : 16px;
+$fz-18             : 18px;
+$fz-20             : 20px;
+$fz-22             : 22px;
+$fz-24             : 24px;
+$fz-26             : 26px;
+$fz-28             : 28px;
+$fz-30             : 30px;
+$fz-32             : 32px;
+$fz-36             : 36px;
+
+$lh-18: 18px;
+$lh-20: 20px;
+$lh-22: 22px;
+$lh-24: 24px;
+$lh-26: 26px;
+$lh-28: 28px;
+$lh-30: 30px;
+$lh-32: 32px;
+$lh-34: 34px;
+$lh-36: 36px;
+$lh-38: 38px;
+$lh-40: 40px;
+$lh-42: 42px;
+$lh-44: 44px;
+$lh-50: 50px;
+
+$font-size-body1: 14px;
+$font-size-body2: 13px;
+$font-size-body3: 12px;
+
+$font-size-subtitle3: 15px;
+$font-size-subtitle2: 16px;
+$font-size-subtitle1: 18px;
+
+
+$font-size-h6     : 20px;
+$font-size-h5     : 22px;
+$font-size-h4     : 24px;
+$font-size-h3     : 28px;
+$font-size-h2     : 32px;
+$font-size-h1     : 36px;
+$font-size-display: 36px;
+
+
+// ---------------------------字体类型  -----------------------------------------
+$family-avenir   : 'Avenir-Medium,Avenir';
+$family-apple    : '-apple-system';
+$family-blink    : 'BlinkMacSystemFont';
+$family-helvetica: 'Helvetica';
+$family-neue     : 'Neue';
+$family-ping     : 'PingFang SC';
+$family-roboto   : 'Roboto';
+$family-source   : 'Source Han Sans SC';
+$family-noto     : 'Noto Sans CJK SC';
+$family-segoe    : 'Segoe UI,Microsoft YaHei';
+$family-Wen      : 'WenQuanYi Micro Hei';
+$family-sans     : 'sans-serif';
+$family-heavy    : 'Avenir-Heavy,Avenir';
+$family-medium   : 'Avenir-Medium,Avenir';
+$family-sf       : 'SFProText-Regular,SFProText';
+
+// ---------------------------字粗细  -----------------------------------------
+$weight-light: 300;
+$weight-regular: 400;
+$weight-blod: 600;
+$weight-base: 500;
+$weight-mid: 600;
+$weight-lg: 800;

@@ -1,0 +1,80 @@
+.flight-info {
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .17);
+  background-color: #fff;
+  .title {
+    .segment-info {
+      line-height: 48px;
+      .direction {
+        display: inline-block;
+        padding: 0 12px;
+        font-size: 24px;
+        border-radius:6px;
+        border: none;
+        color: #fff;
+        background-color: rgba(230,0,35,1);
+      }
+      .segment, .departure-week {
+        font-size: 32px;
+        color: #333;
+        margin-left: 16px;
+        font-weight: bold;
+      }
+      .get-detail-more {
+        float: right;
+        color: #5983B2;
+        font-size: 32px;
+        margin-top: 5px;
+        .at-icon {
+          margin-left: 16px;
+        }
+      }
+    }
+    .segment-cabin {
+
+      font-size: 28px;
+      margin-top: 16px;
+      color: #333;
+      .segment {
+        position: relative;
+        margin-left: 54px;
+        .type {
+          margin-right: 16px;
+        }
+        &:before {
+          position: absolute;
+          left: -25px;
+          top: 5px;
+          width: 4px;
+          height: 30px;
+          display: inline-block;
+          background-color: gray;
+          content: '';
+        }
+        &:first-child {
+          margin-left: 0;
+          &:before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+  .segments-info {
+    .at-float-layout__container {
+      border-radius: 20px 20px 0 0;
+      max-height: 75vh;
+      min-height: auto;
+      .layout-body {
+        max-height: 75vh;
+        min-height: auto;
+        padding: 0;
+        .layout-body__content {
+          max-height: 75vh;
+          min-height: auto;
+        }
+      }
+    }
+  }
+}

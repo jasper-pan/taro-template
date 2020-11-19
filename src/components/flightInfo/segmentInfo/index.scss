@@ -1,0 +1,113 @@
+.segment-info {
+  margin-top: 64px;
+  .title {
+    .type {
+      display: inline-block;
+      height: 48px;
+      font-size: 24px;
+      padding: 0 12px;
+      background-color: #E60023;
+      color: #fff;
+      border-radius: 6px;
+    }
+    .departure-date {
+      display: inline-block;
+      height: 48px;
+      font-size: 32px;
+      color: #333;
+      margin: 0 16px;
+    }
+    .week {
+      display: inline-block;
+      height: 48px;
+      font-size: 32px;
+      color: #333;
+    }
+  }
+  .details {
+    margin-top: 16px;
+    line-height: 48px;
+    .departure, .arrival {
+      font-size: 28px;
+      color: #333;
+      .time {
+        display: inline-block;
+        width: 88px;
+        margin-right: 38px;
+      }
+      .airport {
+        position: relative;
+        &:before {
+          content: '';
+          display: inline-block;
+          width: 12px;
+          height: 12px;
+          background-color: rgba(224,224,224,1);
+          position: absolute;
+          left: -24px;
+          top: 12px;
+        }
+      }
+    }
+    .detail {
+      margin-top: 16px;
+      .duration {
+        display: inline-block;
+        width: 88px;
+        margin-right: 38px;
+        font-size: 24px;
+        color: #858585;
+        vertical-align: 30px;
+      }
+      .info {
+        position: relative;
+        display: inline-block;
+        width: 75%;
+        background-color: rgba(245,245,245,1);
+        border-radius:8px;
+        padding: 16px;
+        .marketing {
+          .at-icon {
+            font-size: 32px;
+            color: #E60023;
+          }
+          .flight-number {
+            font-size: 28px;
+            color: #333;
+            margin-left: 8px;
+          }
+          .cabin-name {
+            font-size: 28px;
+            color: #333;
+            margin-left: 16px;
+            margin-right: 16px;
+          }
+        }
+        .equipment {
+          font-size: 28px;
+          color: #858585;
+        }
+        &:before {
+          content: '';
+          display: inline-block;
+          width: 4px;
+          height: 152px;
+          background-color: rgba(224,224,224,1);
+          position: absolute;
+          left: -20px;
+          top: -8px;
+        }
+      }
+    }
+    .stops {
+      margin-left: 126px;
+      margin-top: 16px;
+    }
+    .arrival {
+      margin-top: 16px;
+    }
+  }
+  &:first-child {
+    margin-top: 0;
+  }
+}

@@ -1,0 +1,63 @@
+.customize-at-model {
+  .at-modal__container {
+    width: 654px;
+    padding: 64px 32px 32px 32px;
+    color: rgba(51, 51, 51, 1);
+    font-weight: 600;
+    text-align: center;
+    overflow: visible;
+
+    .modal-icon {
+      width: 96px;
+      height: 96px;
+      background: rgba(230, 0, 35, 1);
+      border: 10px solid rgba(255, 255, 255, 1);
+      border-radius: 96px;
+      position: absolute;
+      top: -48px;
+      left: 50%;
+      margin-left: -48px;
+
+      .icon {
+        color: #fff;
+        font-size: 48px;
+        position: absolute;
+        margin: -8px 0 0 -24px;
+        line-height: 96px;
+      }
+    }
+
+    .modal-title {
+      height: 56px;
+      font-size: 36px;
+      line-height: 56px;
+      margin-bottom: 16px;
+    }
+
+    .modal-content {
+      font-size: 32px;
+      font-weight: 400;
+      margin-bottom: 32px;
+    }
+
+    .at-button {
+      width: 462px;
+      height: 80px;
+      line-height: 80px;
+      font-size: 28px;
+      color: rgba(230, 0, 35, 1);
+      border: none;
+    }
+
+    .to-home {
+      background: rgba(230, 0, 35, 1);
+      border-radius: 8px;
+      color: rgba(255, 255, 255, 1);
+      margin-bottom: 16px;
+    }
+    .to-close {
+      height: 44px;
+      line-height: 44px;
+    }
+  }
+}

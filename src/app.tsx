@@ -1,15 +1,18 @@
-import React from 'react'
+import React from 'react';
+import 'taro-ui/dist/style/index.scss';
+import '@/assets/scss/app.scss';
 import Stores from './store';
-import './app.scss';
+import './assets/scss/icon.scss';
+import './i18n';
 
-const App = (props) =>{
-  
-  return (
-    <Stores.Provider>
-      {props.children}
-      
-    </Stores.Provider>
-  )
+class App extends React.Component {
+  render() {
+    return (
+      <Stores.Provider>
+        {this.props.children} 
+      </Stores.Provider>
+    );
+  };
 }
 
-export default App
+export default App;

@@ -1,3 +1,5 @@
+var path = require('path');
+
 module.exports = {
   env: {
     NODE_ENV: '"development"'
@@ -5,33 +7,53 @@ module.exports = {
   defineConstants: {
   },
   mini: {},
+  sass: {
+    resource: path.resolve(__dirname, '..', 'src/assets/scss/theme/_skin.scss')
+  },
   h5: {
-
-    webpackChain(chain) {
-      chain.merge({
-        output: {
-          filename: 'main.js',
-          libraryTarget: 'commonjs'
+    devServer: {
+      https: false,
+      proxy: {
+        '/tRtApi': {
+          target: 'http://10.225.64.92/mhtest/api/tRetailAPI',
+          secure: false,
+          changeOrigin: true,
+          pathRewrite: {
+            '^/tRtApi': ''
+          }
         },
-        module: {
-          rules: {
-            use: {
-              loader: 'babel-loader',
-              options: {
-                presets: [
-                  '@babel/preset-env',
-                  '@babel/preset-react',
-                  '@babel/preset-typescript',
-                ],
-              }
-            }
+        '/authApi': {
+          target: 'http://10.225.64.92/mhtest/api/uc/v1/user',
+          secure: false,
+          changeOrigin: true,
+          pathRewrite: {
+            '^/authApi': ''
+          }
+        },
+        '/profileApi': {
+          target: 'http://10.225.64.92/mhtest/api/uc/v1/profile',
+          secure: false,
+          changeOrigin: true,
+          pathRewrite: {
+            '^/profileApi': ''
+          }
+        },
+        '/locations': {
+          target: 'http://10.225.6.43:8280/LocationAPI',
+          secure: false,
+          changeOrigin: true,
+          pathRewrite: {
+            '^/locations': ''
           }
         }
-      })
-      chain.plugins.delete('htmlWebpackPlugin')
-      chain.plugins.delete('addAssetHtmlWebpackPlugin')
-
+      }
     }
+    // webpackChain(chain) {
+    
+    //   chain.plugins.delete('htmlWebpackPlugin')
+    //   chain.plugins.delete('addAssetHtmlWebpackPlugin')
+
+    // }
 
   }
 }

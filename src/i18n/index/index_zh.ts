@@ -1,0 +1,22 @@
+export const index = {
+  appTitle: '天津航空官方应用',
+  appDescription: 'APP在手，所有行程尽在掌握',
+  specialTicketPurchase: '军警残购票',
+  checkIn: '值机选座',
+  luggage: '托运行李',
+  meal: '机上餐食',
+  moreServices: '更多服务',
+  selectDate: '选择日期',
+  depDate: '去程日期',
+  returnDate: '回程日期',
+  maxSegment: '添加航段数量已达上限',
+  multiTitle: '多程',
+  addSegment: '再加一程',
+  search: '搜索',
+  multiTip1: '请选择出发日期',
+  multiTip2: '请选择出发城市',
+  multiTip3: '请选择到达城市',
+  cityError: '出发城市与到达城市不能相同',
+  depCity: '出发城市',
+  arrCity: '到达城市'
+};

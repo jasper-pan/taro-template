@@ -1,0 +1,22 @@
+export const index = {
+  appTitle: 'Official application of Tianjin Airlines',
+  appDescription: 'App in hand, master all the itineraries',
+  specialTicketPurchase: 'Disabled ticket purchase of military police',
+  checkIn: 'Check in seat selection',
+  luggage: 'check-in luggage',
+  meal: 'Meals on board',
+  moreServices: 'More Services',
+  selectDate: 'Select Date',
+  depDate: ' Date of departure',
+  returnDate: 'Return date',
+  maxSegment: 'The maximum number of added segments has been reached',
+  multiTitle: 'Multi',
+  addSegment: 'Add a ride',
+  search: 'Search',
+  multiTip1: 'Please select a departure date',
+  multiTip2: 'Please choose your departure city',
+  multiTip3: 'Please select the destination city',
+  cityError: 'The city of departure cannot be the same as the city of arrival',
+  depCity: 'Departure city',
+  arrCity: 'Arriving city'
+};

@@ -1,53 +1,28 @@
+var path = require('path');
+
 module.exports = {
   env: {
-    NODE_ENV: '"development"'
+    NODE_ENV: '"production"'
   },
   defineConstants: {
   },
+  
   mini: {},
+  sass: {
+    resource: path.resolve(__dirname, '..', 'src/assets/scss/theme/_skin.scss')
+  },
   h5: {
-    sourceMapType:'cheap-module-source-map',
+    sourceMapType:'source-map',
     enableExtract:false,
-    webpackChain(chain) {
+    webpackChain(chain,webpack) {
+      
       chain.merge({
         output: {
           filename: 'main.js'
-        },
-        optimization:{
-          runtimeChunk: false,
-          // splitChunks:{
-          //   chunks: 'all',
-          //   minSize: 10,
-          //   minChunks: 2,
-          //   automaticNameDelimiter: '~',
-          //   name: true,
-          //   cacheGroups: {
-          //     common: {
-          //         test: /src\/other/,
-          //         enforce: true
-          //     }
-          // }
-
-
-          // },
-         
         }
-        // module: {
-        //   rules: {
-        //     use: {
-        //       loader: 'babel-loader',
-        //       options: {
-        //         presets: [
-        //           '@babel/preset-env',
-        //           '@babel/preset-react',
-        //           '@babel/preset-typescript',
-        //         ],
-        //       }
-        //     }
-        //   }
-        // }
       })
-      chain.plugins.delete('htmlWebpackPlugin')
+      chain.plugin('limit').use(webpack.optimize.LimitChunkCountPlugin).init((Plugin) => new Plugin({maxChunks: 1}))
+      // chain.plugins.delete('htmlWebpackPlugin')
       chain.plugins.delete('addAssetHtmlWebpackPlugin')
      
 

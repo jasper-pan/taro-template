@@ -1,0 +1,44 @@
+.agreement {
+  padding: 0 20px 20px;
+  height: 144px;
+  line-height: 36px;
+  font-weight: 400;
+  font-size: 24px;
+  color: #858585;
+  .layout-body__content {
+    max-height: 1088px;
+  }
+  .at-float-layout__container {
+    box-sizing: border-box;
+    border-radius: 20px 20px 0px 0px;
+    max-height: none;
+    .layout-header {
+      height: 112px;
+      padding: 32px;
+      font-size: 32px;
+      border-radius: 20px 20px 0px 0px;
+      background-color:#fff;
+      font-weight: bold;
+      color: #333;
+      line-height: 48px;
+      .layout-header__btn-close::before,
+      .layout-header__btn-close::after {
+        background-color: #333;
+      }
+    }
+    .layout-body {
+      padding: 0 32px 32px;
+      max-height: none;
+    }
+  }
+  .agreement-trigger {
+    color: #5983B2;
+  }
+  .agreement-context {
+    text-align: justify;
+    line-height: 44px;
+    font-weight: 400;
+    font-size: 28px;
+    color: #333;
+  }
+}

@@ -1,0 +1,133 @@
+/*  #ifdef  h5  */
+ 
+// @import './var/variables.scss';
+// @import './var/font.scss';
+// @import './theme/skin';
+// @import './mixins/index.scss';
+
+
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, segoe ui, Roboto,
+  Helvetica, Arial,
+  sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+}
+
+/*  #endif  */
+/*  #ifdef  weapp  */
+page, view, scroll-view, swiper, movable-area, cover-view, text, icon, rich-text,
+progress, button, checkbox-group, checkbox, form, input, label, picker,
+picker-view, radio-group, slider, switch, textarea, navigator, audio, image,
+video, live-player, live-pusher, open-data, web-view {
+  box-sizing: border-box;
+}
+
+page {
+  min-height: 100vh;
+  background: #F5F5F5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, segoe ui, Roboto,
+  Helvetica, Arial,
+  sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+}
+
+/*  #endif  */
+
+.taro_page {
+  min-height: 100vh;
+  background: #F5F5F5;
+}
+
+.air-picker {
+  padding: 0.512rem 0;
+  margin-left: 0.68267rem;
+  margin-bottom: 1PX;
+  color: #333;
+  background-color: #FFF;
+
+  &--inner {
+    border-bottom: 1PX solid #d6e4ef;
+  }
+
+  &--label {
+    display: inline-block;
+    margin-right: 0.34133rem;
+    width: 3.66933rem;
+    font-size: 0.68267rem;
+    line-height: 1.5;
+    vertical-align: middle;
+    text-align: left;
+  }
+}
+
+/* AtFloatLayout样式 */
+.customize-float-layout {
+  .at-float-layout__container {
+    border-radius: 20px 20px 0 0;
+
+    .layout-header {
+      border-radius: 20px 20px 0 0;
+      background-color: #fff;
+      padding: 32px;
+      color: #333;
+      font-size: 32px;
+      font-weight: 600;
+    }
+
+    .layout-header__btn-close {
+      right: 32px;
+    }
+
+    .at-radio__icon .at-icon {
+      color: #E60023;
+    }
+
+    .at-float-layout .layout-header__btn-close::before,
+    .at-float-layout .layout-header__btn-close::after {
+      background: #858585;
+    }
+  }
+
+  .at-radio::before,
+  .at-radio::after,
+  .at-radio__option + .at-radio__option .at-radio__option-wrap::after {
+    display: none;
+  }
+}
+
+/* 操作弹窗样式（操作成功）*/
+.operation-Modal {
+  padding: 32px;
+  text-align: center;
+
+  .icon-close {
+    text-align: right;
+  }
+
+  .model-png {
+    width: 240px;
+    height: 240px;
+  }
+
+  .bind-tip {
+    font-size: 36px;
+    font-weight: 600;
+    color: rgba(51, 51, 51, 1);
+    line-height: 56px;
+  }
+
+  .know-btn {
+    margin: 64px 32px 32px 32px;
+    height: 80px;
+    background: rgba(230, 0, 35, 1);
+    border-radius: 40px;
+    font-size: 28px;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 1);
+    line-height: 80px;
+  }
+}
+ 
