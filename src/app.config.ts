@@ -1,6 +1,7 @@
 export default {
   pages: [
-    'pages/index/index'
+    'pages/index/index',
+    'pages/home/index'
   ],
   window: {
     backgroundTextStyle: 'light',
@@ -21,7 +22,7 @@ export default {
       },
       {
         text: "首页",
-        pagePath: "pages/index/index",
+        pagePath: "pages/home/index",
         iconPath: "./assets/img/homePage1.png",
         selectedIconPath: "./assets/img/homePage.png",
       },

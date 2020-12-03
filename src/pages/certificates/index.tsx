@@ -2,12 +2,12 @@ import React from 'react';
 import { View } from '@tarojs/components'
  
 
- 
+const Home = () => {
 
-const AcBooking = () => {
+ 
   return (
-    <View>1111</View>
+    <View  >222</View>
   )
 };
 
-export default AcBooking;
+export default Home;

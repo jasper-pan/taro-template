@@ -22,7 +22,7 @@ export const setToken = (token: string) => {
 /**
  * 获取token
  */
-export const getToken = () => {
+export const getToken = ():string => {
   return Taro.getStorageSync(TOKEN_NAME);
 };
 
