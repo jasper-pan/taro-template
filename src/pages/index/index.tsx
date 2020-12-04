@@ -44,13 +44,13 @@ const Index = () => {
         autoplay
       >
         <SwiperItem>
-          <Image mode='scaleToFill' src={bannerImg} />
+          <Image mode='aspectFit' src={bannerImg} />
         </SwiperItem>
         <SwiperItem>
-          <Image mode='scaleToFill' src={bannerImg} />
+          <Image mode='aspectFit' src={bannerImg} />
         </SwiperItem>
         <SwiperItem>
-          <Image mode='scaleToFill' src={bannerImg} />
+          <Image mode='aspectFit' src={bannerImg} />
         </SwiperItem>
       </Swiper>
 

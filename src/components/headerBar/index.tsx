@@ -13,8 +13,8 @@ const HeaderBar = (props) => {
     usePageScroll((res) => {
         let top = res.scrollTop
         let barHeight = navigatorBarHeight + height
-        console.log(top <= barHeight)
         if (top <= barHeight) {
+            console.log(Number(top/barHeight))
             setOpacity(Number(top/barHeight))
         }else{
             if(opacity!==1){
@@ -30,7 +30,9 @@ const HeaderBar = (props) => {
         if (top <= barHeight) {
             setOpacity(Number(top/barHeight))
         }else{
-            setOpacity(1)
+            if(opacity!==1){
+                setOpacity(1)
+            } 
         }
     }, 200)
 
@@ -59,7 +61,10 @@ const HeaderBar = (props) => {
         <View className='header-wrap' style={{opacity: Number(opacity).toFixed(2) }}>
             <View  style={{ height: `${height}px` }}>
             </View>
-             <View style={{height:`${navigatorBarHeight}px`}} className='header-main'></View>
+             <View style={{height:`${navigatorBarHeight}px`}} className='header'>
+                 <View className='header-left' style={{maxWidth:`${Number(opacity)===1?'0px':''}`}}>adasdasdsddddddddddddddddddd</View>
+                 <View className='header-right'>111</View>
+             </View>
         </View>
 
     )
