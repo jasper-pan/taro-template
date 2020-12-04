@@ -1,6 +1,6 @@
 import Taro from '@tarojs/taro';
 import { TOKEN_NAME } from '@/assets/js/config';
-import cookie from 'react-cookies';
+ 
 
 /**
  * 设置 token
@@ -9,11 +9,6 @@ import cookie from 'react-cookies';
 export const setToken = (token: string) => {
   try {
     Taro.setStorageSync(TOKEN_NAME, token);
-    const exp = new Date();
-    exp.setTime(exp.getTime() + 365 * 24 * 60 * 60 * 1000);
-    const v = { expires: exp, path: '/', domain: document.domain };
-    cookie.save('user-token',token, v);
-    console.log('domain', document.domain);
   } catch (e) {
     throw 'set token error';
   }

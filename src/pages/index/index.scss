@@ -1,4 +1,14 @@
 .index-wrap{
 height: 200vh;
- 
+    .banner{
+        height: 300px;
+        width:100%;
+        background-color: red;
+    }
+    .sub_bar{
+        position: sticky;
+        height: 100px;
+        width:100%;
+        background: green;
+    }
 }

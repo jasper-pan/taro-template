@@ -43,20 +43,14 @@
     "@tarojs/react": "3.0.16",
     "@tarojs/runtime": "3.0.16",
     "@tarojs/taro": "3.0.16",
-    "@trp/apis": "^2.3.3",
     "@types/classnames": "^2.2.10",
     "babel-loader": "^8.2.1",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "dayjs": "^1.8.23",
-    "i18next": "^19.3.4",
-    "i18next-browser-languagedetector": "^4.0.2",
     "react": "^16.10.0",
-    "react-cookies": "^0.1.1",
     "react-dom": "^16.10.0",
-    "react-i18next": "^11.7.3",
     "taro-ui": "3.0.0-alpha.1",
-    "unstated-next": "^1.1.0",
-    "webpack-bundle-analyzer": "^4.1.0"
+    "unstated-next": "^1.1.0"
   },
   "devDependencies": {
     "@babel/core": "^7.8.0",
@@ -75,6 +69,7 @@
     "eslint-plugin-react": "^7.8.2",
     "eslint-plugin-react-hooks": "^1.6.1",
     "stylelint": "9.3.0",
-    "typescript": "^3.7.0"
+    "typescript": "^3.7.0",
+    "webpack-bundle-analyzer": "^4.1.0"
   }
 }
