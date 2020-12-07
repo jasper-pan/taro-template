@@ -1,14 +1,17 @@
 import { createContainer } from 'unstated-next';
-import { useState } from 'react';
 
-const useStore = () => {
-  let [count, setCount] = useState(0)
-  let decrement = () => setCount(count - 1)
-  let increment = () => setCount(count + 1)
-  return { count, decrement, increment }
+const modulesFiles = require.context('./modules', true, /\.tsx$/);
 
-};
+function useStore() {
+  return modulesFiles.keys().reduce((modules: { [x: string]: any; }, modulePath: string) => {
+    const moduleName = modulePath.replace(/^\.\/(.*)\.\w+$/, '$1');
+    const value = modulesFiles(modulePath);
+    modules[moduleName] = value.default();
+    return modules;
+  }, {});
+}
 
 const Stores = createContainer(useStore);
 
 export default Stores;
+

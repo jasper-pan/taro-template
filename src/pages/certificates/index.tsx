@@ -3,10 +3,8 @@ import { View } from '@tarojs/components'
  
 
 const Home = () => {
-
- 
   return (
-    <View  >222</View>
+    <View>222</View>
   )
 };
 

@@ -1,15 +1,19 @@
 import React, { useState } from 'react';
+ 
 import Taro from '@tarojs/taro'
-import { View, Image, Swiper, SwiperItem } from '@tarojs/components'
+import { View, Image, Swiper, SwiperItem, Button } from '@tarojs/components'
 import { loginRequest } from '@/apis/servers'
 import HeaderBar from '@/components/headerBar'
+import Store from '@/store';
 
 import bannerImg from '../../assets/img/54.png'
 
-import './index.scss';
 
+import './index.scss';
+ 
 
 const Index = () => {
+  const {counter} = Store.useContainer()
   const [height, setHeight] = useState(0)
   const [navigatorBarHeight, setNavigatorBarHeight] = useState(46)
   const login = async () => {
@@ -54,7 +58,11 @@ const Index = () => {
         </SwiperItem>
       </Swiper>
 
-      <View className='sub_bar' style={{ top: `${height + navigatorBarHeight}px` }}>1111111111</View>
+      <View className='sub_bar' style={{ top: `${height + navigatorBarHeight}px` }}>
+        {counter.count}
+      </View>
+      <Button onClick={counter.decrement}>-</Button>
+      <Button onClick={counter.increment}>+</Button>
     </View>
 
   )
