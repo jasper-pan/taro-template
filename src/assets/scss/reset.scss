@@ -1,9 +1,4 @@
-/*******************************
-             Reset
-*******************************/
 
-/* Border-Box */
-*,
 *:before,
 *:after {
   box-sizing: inherit;
@@ -159,4 +154,8 @@ a {
 
 li {
   list-style: none;
+}
+
+#app{
+  background-color: #f8f8f8;
 }
